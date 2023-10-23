@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="张秋">
+    
+    <title>
+        
+            AI对话-网页端 |
+        
+        张秋
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","font_size":null,"font_family":null,"hover":{"shadow":"ture","scale":false},"first_screen":{"enable":true,"header_transparent":"ture","background_img":"/images/bg.svg","description":"文字依然伟大","font_color":null,"hitokoto":false},"scroll":{"progress_bar":false,"percent":true}},"local_search":{"enable":false,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":"ture","wordcount":"ture","min2read":"ture"},"img_align":"left","copyright_info":false},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               张秋
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/mdtbox/"
+                            >
+                                模具设计工具箱
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/AI/"
+                            >
+                                AI
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/EfficiencyTools/"
+                            >
+                                效率工具
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about/"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives/"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/mdtbox/">模具设计工具箱</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/AI/">AI</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/EfficiencyTools/">效率工具</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about/">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives/">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">AI对话-网页端</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">张秋</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-10-12 15:03:50</span>
+        <span class="mobile">2023-10-12 15:03</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-10-13 10:38:46</span>
+    </span>
+    
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/AI/">AI</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/OpenAI/">OpenAI</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>565 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>2 分钟</span>
+        </span>
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id="网页端OpenAI智能对话"><a href="#网页端OpenAI智能对话" class="headerlink" title="网页端OpenAI智能对话"></a>网页端OpenAI智能对话</h1><h2 id="📽动画演示"><a href="#📽动画演示" class="headerlink" title="📽动画演示"></a>📽动画演示</h2><iframe src="//player.bilibili.com/player.html?aid=962002113&bvid=BV1jH4y1o7C5&cid=1296786461&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=498 widht=890> </iframe>
+
+<h2 id="🌐浏览器选用"><a href="#🌐浏览器选用" class="headerlink" title="🌐浏览器选用"></a>🌐浏览器选用</h2><blockquote>
+<p>推荐使用火狐浏览器或谷歌浏览器<br>火狐： <a class="link"   target="_blank" rel="noopener" href="http://www.firefox.com.cn/" >http://www.firefox.com.cn/<i class="fas fa-external-link-alt"></i></a><br>谷歌： <a class="link"   target="_blank" rel="noopener" href="https://www.google.com/intl/zh-CN/chrome/" >https://www.google.com/intl/zh-CN/chrome/<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+<h2 id="🔐密钥配置"><a href="#🔐密钥配置" class="headerlink" title="🔐密钥配置"></a>🔐密钥配置</h2><h3 id="接口地址-URL"><a href="#接口地址-URL" class="headerlink" title="接口地址(URL)"></a>接口地址(URL)</h3><blockquote>
+<p>填<code>chat.zhangqiu.pro</code>，一般情况都是这个，如果有变化会有公示。</p>
+</blockquote>
+<h3 id="API-Key-密钥"><a href="#API-Key-密钥" class="headerlink" title="API Key(密钥)"></a>API Key(密钥)</h3><blockquote>
+<p>SK开头的一串字符串，一个都不要漏，需要的<a class="link"   target="_blank" rel="noopener" href="https://cdn.staticaly.com/gh/zhangqiu-ai/picx-images-hosting@master/WeChat-Image_20230608121004.5jus4qbvpou8.webp" >联系博主<i class="fas fa-external-link-alt"></i></a>购买。<br><code>sk-dhqwHlBSdInICRM4EfD9D7Ef848c4f34A96274C4C8B*****</code><br><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://img.zhangqiu.pro/file/ae96de34e2c380442e6ef.png"
+                      alt="图片"
+                ></p>
+</blockquote>
+<h2 id="⚛︎模型选择"><a href="#⚛︎模型选择" class="headerlink" title="⚛︎模型选择"></a>⚛︎模型选择</h2><p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://img.zhangqiu.pro/file/692633ec87f55f1c19783.png"
+                      alt="图片"
+                ></p>
+<h3 id="⏺gpt-3-5-turbo"><a href="#⏺gpt-3-5-turbo" class="headerlink" title="⏺gpt-3.5-turbo"></a>⏺gpt-3.5-turbo</h3><blockquote>
+<p>一般情况默认选择<code>gpt-3.5-turbo</code>，价格便宜。</p>
+</blockquote>
+<h3 id="⏺gpt-3-5-turb-16k"><a href="#⏺gpt-3-5-turb-16k" class="headerlink" title="⏺gpt-3.5-turb-16k"></a>⏺gpt-3.5-turb-16k</h3><blockquote>
+<p>如果觉得<code>gpt-3.5-turbo</code>输出的不满意，可以选择<code>gpt-3.5-turbo-16k</code>，虽然价格比<code>gpt-3.5-turbo</code>贵一些，但是输出质量和速度有明显提升，也没有多贵还是很耐用的。</p>
+</blockquote>
+<h2 id="⌚️提示词输入"><a href="#⌚️提示词输入" class="headerlink" title="⌚️提示词输入"></a>⌚️提示词输入</h2><blockquote>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://img.zhangqiu.pro/file/9f7f1be31e054be53f1e7.png"
+                      alt="图片"
+                ><br>Prompt（提示）在使用语言模型时非常重要，因为它是指导模型生成响应的文本或问题的起点。以下是几个关于为什么Prompt很重要的原因：</p>
+<ol>
+<li>指导模型：Prompt可以帮助模型理解用户的意图和上下文，并生成更准确、相关的回答。通过给出清晰、具体的Prompt，可以引导模型关注特定的问题或主题，从而提高生成结果的质量。</li>
+<li>控制输出：Prompt可以用来控制模型的输出，以避免生成不合适、冒犯或不符合预期的内容。通过在Prompt中明确规定生成结果的格式、风格或要求，可以确保模型生成符合期望的回答。</li>
+<li>防止模型偏见：Prompt可以用来减少模型的偏见或倾向性。通过在Prompt中提供明确的指导，可以帮助模型避免生成不平衡或有偏见的回答。这对于确保模型生成公正、中立的内容非常重要。</li>
+<li>引导创造性输出：Prompt可以用来引导模型生成创造性的、有趣的内容。通过提供有趣、开放性的Prompt，可以激发模型产生新颖、独特的回答，从而增加交互的趣味性和吸引力。</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>下面这个提示词网站质量还不错，可以参照学习。<br><a class="link"   target="_blank" rel="noopener" href="https://www.learnprompt.pro/docs/basics/prompting" >https://www.learnprompt.pro/docs/basics/prompting<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">#效率工具</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/AI/">#AI</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/OpenAI/">#OpenAI</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/10/16/hello-world/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">hello-world</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/09/23/API-KEY/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">KEY(密钥)</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AFOpenAI%E6%99%BA%E8%83%BD%E5%AF%B9%E8%AF%9D"><span class="nav-number">1.</span> <span class="nav-text">网页端OpenAI智能对话</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%BD%E5%8A%A8%E7%94%BB%E6%BC%94%E7%A4%BA"><span class="nav-number">1.1.</span> <span class="nav-text">📽动画演示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%90%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%89%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">🌐浏览器选用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%90%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">🔐密钥配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E5%9C%B0%E5%9D%80-URL"><span class="nav-number">1.3.1.</span> <span class="nav-text">接口地址(URL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API-Key-%E5%AF%86%E9%92%A5"><span class="nav-number">1.3.2.</span> <span class="nav-text">API Key(密钥)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9A%9B%EF%B8%8E%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9"><span class="nav-number">1.4.</span> <span class="nav-text">⚛︎模型选择</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%BAgpt-3-5-turbo"><span class="nav-number">1.4.1.</span> <span class="nav-text">⏺gpt-3.5-turbo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%BAgpt-3-5-turb-16k"><span class="nav-number">1.4.2.</span> <span class="nav-text">⏺gpt-3.5-turb-16k</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%8C%9A%EF%B8%8F%E6%8F%90%E7%A4%BA%E8%AF%8D%E8%BE%93%E5%85%A5"><span class="nav-number">1.5.</span> <span class="nav-text">⌚️提示词输入</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2023</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">张秋</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
