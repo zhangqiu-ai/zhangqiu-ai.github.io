@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="张秋">
+    
+    <title>
+        
+            Browser Use：用自然语言控制浏览器的AI神器 | 开源工具 |
+        
+        张秋
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","font_size":null,"font_family":null,"hover":{"shadow":"ture","scale":false},"first_screen":{"enable":true,"header_transparent":"ture","background_img":"/images/bg.svg","description":"文字依然伟大","font_color":null,"hitokoto":false},"scroll":{"progress_bar":false,"percent":true}},"local_search":{"enable":false,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":"ture","wordcount":"ture","min2read":"ture"},"img_align":"left","copyright_info":false},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               张秋
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/AIAssistant/"
+                            >
+                                AI 助手
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/EfficiencyTools/"
+                            >
+                                效率工具
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about/"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives/"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/AIAssistant/">AI 助手</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/EfficiencyTools/">效率工具</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about/">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives/">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">Browser Use：用自然语言控制浏览器的AI神器 | 开源工具</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">张秋</span>
+                            
+                                <span class="author-label">Lv2</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2025-01-01 21:37:15</span>
+        <span class="mobile">2025-01-01 21:37</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2025-01-03 22:18:18</span>
+    </span>
+    
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/AI%E5%B7%A5%E5%85%B7/">AI工具</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">自动化</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.3k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>4 分钟</span>
+        </span>
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>想象一下，当你在睡觉时，AI正在帮你完成网上所有繁琐的任务：自动监控机票价格、自动追踪快递物流、甚至帮你抢购限量商品。这不是科幻电影，而是 Browser Use 带来的现实。这款开源神器一经推出就引爆技术圈，短短一周内GitHub斩获5K+ Star，堪称2025年最值得关注的AI效率工具！</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../../BaseSources/BrowerUse/chrome_APbIhSuUR5.png"
+                      alt="Browser Use的GitHub Star增长趋势"
+                ></p>
+<p>从Star增长趋势图可以看出：</p>
+<ul>
+<li>项目在11月初发布后快速获得关注</li>
+<li>12月中旬开始呈现爆发式增长</li>
+<li>在短短两个月内突破8000+ Star</li>
+<li>增长曲线依然保持强劲上升趋势</li>
+</ul>
+<p>这种罕见的增长速度证明了Browser Use在AI自动化领域的创新价值，以及开发者社区对这类智能工具的强烈需求。</p>
+<h2 id="为什么-Browser-Use-与众不同？"><a href="#为什么-Browser-Use-与众不同？" class="headerlink" title="为什么 Browser Use 与众不同？"></a>为什么 Browser Use 与众不同？</h2><p>传统的网页自动化工具往往需要编写复杂的规则和脚本，而 Browser Use 让这一切变得简单：只需用自然语言告诉AI你想做什么，它就能完美执行。以流行的Playwright为例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Playwright传统写法</span></span><br><span class="line"><span class="keyword">from</span> playwright.sync_api <span class="keyword">import</span> sync_playwright</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">login_example</span>():</span><br><span class="line">    <span class="keyword">with</span> sync_playwright() <span class="keyword">as</span> p:</span><br><span class="line">        browser = p.chromium.launch()</span><br><span class="line">        page = browser.new_page()</span><br><span class="line">        page.goto(<span class="string">&#x27;https://example.com&#x27;</span>)</span><br><span class="line">        page.get_by_role(<span class="string">&#x27;button&#x27;</span>, name=<span class="string">&#x27;登录&#x27;</span>).click()</span><br><span class="line">        page.get_by_label(<span class="string">&#x27;用户名&#x27;</span>).fill(<span class="string">&#x27;username&#x27;</span>)</span><br><span class="line">        page.get_by_label(<span class="string">&#x27;密码&#x27;</span>).fill(<span class="string">&#x27;password&#x27;</span>)</span><br><span class="line">        page.get_by_role(<span class="string">&#x27;button&#x27;</span>, name=<span class="string">&#x27;提交&#x27;</span>).click()</span><br><span class="line">        browser.close()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Browser Use写法</span></span><br><span class="line">agent = Agent(</span><br><span class="line">    task=<span class="string">&quot;登录example.com网站，用户名是username&quot;</span>,</span><br><span class="line">    llm=ChatOpenAI(model=<span class="string">&quot;gpt-4&quot;</span>),</span><br><span class="line">)</span><br><span class="line">result = <span class="keyword">await</span> agent.run()</span><br></pre></td></tr></table></figure>
+
+<p>Browser Use通过AI理解用户意图，自动处理复杂的网页交互逻辑，无需手动定位元素和编写步骤。而传统工具如Playwright则需要开发者：</p>
+<ul>
+<li>手动编写选择器和交互代码</li>
+<li>处理各种异常情况</li>
+<li>维护大量重复的自动化脚本</li>
+<li>适配不同网站的页面结构</li>
+</ul>
+<p>在Web自动化任务的准确性测试中，Browser Use以89%的成功率遥遥领先于其他同类工具。这意味着它能更可靠地完成你交给它的任务，大大减少失败和重试的次数。</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../../BaseSources/BrowerUse/chrome_VwjPTbbKMP.png"
+                      alt="Web Agent准确率对比"
+                ></p>
+<p>从上图可以看出：</p>
+<ul>
+<li>Browser Use: 89% 的任务成功率，远超竞品</li>
+<li>Runner H 0.1: 67% 的完成率</li>
+<li>AgentE: 61% 的完成率</li>
+<li>Computer Use: 52% 的完成率</li>
+<li>Web Voyager: 50% 的完成率</li>
+</ul>
+<p>这种显著的性能优势源于Browser Use独特的AI决策引擎和自适应网页交互技术。</p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="/../../BaseSources/BrowerUse/640.png"
+                      alt="Browser Use界面"
+                ></p>
+<h2 id="改变生活的实用场景"><a href="#改变生活的实用场景" class="headerlink" title="改变生活的实用场景"></a>改变生活的实用场景</h2><h3 id="1-智能购物助手"><a href="#1-智能购物助手" class="headerlink" title="1. 智能购物助手"></a>1. 智能购物助手</h3><ul>
+<li>自动比价：同时监控多个电商平台的价格变化</li>
+<li>限量抢购：设定条件自动下单</li>
+<li>优惠券收集：自动搜集并应用最优惠券</li>
+</ul>
+<h3 id="2-求职效率提升"><a href="#2-求职效率提升" class="headerlink" title="2. 求职效率提升"></a>2. 求职效率提升</h3><ul>
+<li>简历批量投递：一次设置，自动投递到多个平台</li>
+<li>职位变动监控：追踪心仪公司的新职位发布</li>
+<li>面试时间协调：自动查找并预约合适的面试时段</li>
+</ul>
+<h3 id="3-生活服务自动化"><a href="#3-生活服务自动化" class="headerlink" title="3. 生活服务自动化"></a>3. 生活服务自动化</h3><ul>
+<li>物流追踪：实时监控多个包裹的配送状态</li>
+<li>场馆预订：自动预订健身房、游泳池等场地</li>
+<li>活动票务：监控演唱会、展览等票务开放</li>
+</ul>
+<h2 id="快速上手指南"><a href="#快速上手指南" class="headerlink" title="快速上手指南"></a>快速上手指南</h2><h3 id="安装和配置"><a href="#安装和配置" class="headerlink" title="安装和配置"></a>安装和配置</h3><ol>
+<li><p>首先通过pip安装Browser Use：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install browser-use</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在项目根目录创建<code>.env</code>文件，添加必要的API密钥：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">OPENAI_API_KEY=your_openai_key_here</span><br><span class="line">ANTHROPIC_API_KEY=your_anthropic_key_here</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><p>让我们看几个实用的示例代码：</p>
+<h3 id="示例1：智能求职助手"><a href="#示例1：智能求职助手" class="headerlink" title="示例1：智能求职助手"></a>示例1：智能求职助手</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain_openai <span class="keyword">import</span> ChatOpenAI</span><br><span class="line"><span class="keyword">from</span> browser_use <span class="keyword">import</span> Agent</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">job_search</span>():</span><br><span class="line">    agent = Agent(</span><br><span class="line">        task=<span class="string">&quot;搜索所有机器学习相关职位，将符合要求的职位保存到&#x27;ml_jobs.txt&#x27;，然后自动开始投递&quot;</span>,</span><br><span class="line">        llm=ChatOpenAI(model=<span class="string">&quot;gpt-4&quot;</span>),</span><br><span class="line">    )</span><br><span class="line">    result = <span class="keyword">await</span> agent.run()</span><br><span class="line">    <span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<h3 id="示例2：航班价格监控"><a href="#示例2：航班价格监控" class="headerlink" title="示例2：航班价格监控"></a>示例2：航班价格监控</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">flight_monitor</span>():</span><br><span class="line">    agent = Agent(</span><br><span class="line">        task=<span class="string">&quot;查找2024年12月25日至2025年2月2日期间，所有从苏黎世到北京的航班，按价格排序&quot;</span>,</span><br><span class="line">        llm=ChatOpenAI(model=<span class="string">&quot;gpt-4&quot;</span>),</span><br><span class="line">    )</span><br><span class="line">    result = <span class="keyword">await</span> agent.run()</span><br><span class="line">    <span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<h3 id="示例3：AI模型搜索"><a href="#示例3：AI模型搜索" class="headerlink" title="示例3：AI模型搜索"></a>示例3：AI模型搜索</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">model_search</span>():</span><br><span class="line">    agent = Agent(</span><br><span class="line">        task=<span class="string">&quot;在Hugging Face上搜索带有cc-by-sa-4.0许可的模型，按点赞数排序并保存前5个到&#x27;top_models.txt&#x27;&quot;</span>,</span><br><span class="line">        llm=ChatOpenAI(model=<span class="string">&quot;gpt-4&quot;</span>),</span><br><span class="line">    )</span><br><span class="line">    result = <span class="keyword">await</span> agent.run()</span><br><span class="line">    <span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>这些示例展示了Browser Use强大的自动化能力。无论是职位搜索、航班监控，还是模型查找，只需要用自然语言描述任务，AI就能完美执行。</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>请遵守网站的使用条款和机器人协议</li>
+<li>合理设置任务间隔，避免对目标网站造成压力</li>
+<li>妥善保管API密钥和个人信息</li>
+</ul>
+<p>Browser Use 不仅仅是一个自动化工具，它是一个融入日常生活的AI助手，能够帮助用户更智能、更高效地使用互联网。随着AI技术的发展，这类工具将越来越成为人们生活中不可或缺的一部分。</p>
+<p>你准备好让AI成为你的网络助手了吗？</p>
+<hr>
+<blockquote>
+<p>项目地址：<a class="link"   target="_blank" rel="noopener" href="https://github.com/browser-use/browser-use" >Browser Use on GitHub<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/AI%E5%B7%A5%E5%85%B7/">#AI工具</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">#自动化</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">#效率工具</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">#开源项目</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/06/01/BaiduNoSpeedLimit/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">百度网盘不限速下载-官方推荐</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88-Browser-Use-%E4%B8%8E%E4%BC%97%E4%B8%8D%E5%90%8C%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">为什么 Browser Use 与众不同？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB%E7%9A%84%E5%AE%9E%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">改变生活的实用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%99%BA%E8%83%BD%E8%B4%AD%E7%89%A9%E5%8A%A9%E6%89%8B"><span class="nav-number">2.1.</span> <span class="nav-text">1. 智能购物助手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B1%82%E8%81%8C%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87"><span class="nav-number">2.2.</span> <span class="nav-text">2. 求职效率提升</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%94%9F%E6%B4%BB%E6%9C%8D%E5%8A%A1%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="nav-number">2.3.</span> <span class="nav-text">3. 生活服务自动化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97"><span class="nav-number">3.</span> <span class="nav-text">快速上手指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">安装和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.2.</span> <span class="nav-text">使用示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B1%EF%BC%9A%E6%99%BA%E8%83%BD%E6%B1%82%E8%81%8C%E5%8A%A9%E6%89%8B"><span class="nav-number">3.3.</span> <span class="nav-text">示例1：智能求职助手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B2%EF%BC%9A%E8%88%AA%E7%8F%AD%E4%BB%B7%E6%A0%BC%E7%9B%91%E6%8E%A7"><span class="nav-number">3.4.</span> <span class="nav-text">示例2：航班价格监控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B3%EF%BC%9AAI%E6%A8%A1%E5%9E%8B%E6%90%9C%E7%B4%A2"><span class="nav-number">3.5.</span> <span class="nav-text">示例3：AI模型搜索</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">4.</span> <span class="nav-text">注意事项</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2023</span> -
+            
+            2025
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">张秋</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
