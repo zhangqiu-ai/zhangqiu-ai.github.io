@@ -1,0 +1,28 @@
+# robots.txt for https://zhangqiu.pro
+# RFC 9309: https://www.rfc-editor.org/rfc/rfc9309
+
+User-agent: *
+Allow: /
+Allow: /AIAssistant/
+Allow: /EfficiencyTools/
+Allow: /about/
+Disallow: /recycleBin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /recycleBin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /recycleBin/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /recycleBin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /recycleBin/
+
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+Sitemap: https://zhangqiu.pro/sitemap.xml
